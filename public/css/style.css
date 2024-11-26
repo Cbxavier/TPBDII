@@ -1,0 +1,68 @@
+/* Estilos gerais */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2C3E50; /* Azul escuro */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+}
+
+.sidebar h4 {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #34495E;
+    font-size: 1.5rem;
+}
+
+.sidebar .nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #34495E;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #3498DB; /* Azul claro */
+    color: #fff;
+    transition: 0.3s;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.content {
+    flex-grow: 1;
+    margin-left: 250px; /* espaço para a barra lateral */
+    padding: 20px;
+    overflow-y: auto;
+    padding-bottom: 60px; /* Espaço para o footer */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 250px; /* Alinha o footer com a barra lateral */
+    width: calc(100% - 250px); /* Preenche o espaço restante da tela */
+    color: #7f8c8d; /* Cor de texto mais suave */
+    font-size: 0.9rem;
+}
